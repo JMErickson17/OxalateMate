@@ -1,0 +1,897 @@
+[
+  {
+    "name": "Taco Bell Taco",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Potatoes chips",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Alfalfa Sprouts",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Almonds",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Apple Juice",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Apples (Peeled)",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Apples with Skin",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Apricots",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Artichokes",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Asparagus",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Avocado",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Bananas",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Basil",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Beef",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Beer",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Beets",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Black Currants",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Black raspberries",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Blackberries",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Blueberries",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Bread",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Breakfast Cereals",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Broccoli",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Brown Rice",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Brussels Sprouts",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Buttermilk",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Cabbage",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Canned Garbanzo Beans",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Canned Peas",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Cantaloupe",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Carrots",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Casaba",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Cashews",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Cauliflower",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Celery",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Cheese",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Cherries",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Chives",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Chocolate",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Chocolate milk",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Cider",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Cinnamon",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Cocoa",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Coconut",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Coffee (Up to 8oz Per Day)",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Collards",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Cooked Barley",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Corn",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Corn Bread",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Corn Tortilla",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Cornmeal",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Cornstarch",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Cranberries",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Cranberry juice",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Dandelion",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Dewberries",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Draft",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Dried",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Dried Cranberries",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Eggplant",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Eggs",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Escarole",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Fig Newtons",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Figs",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Fish or Shellfish",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Fresh",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Fresh Tomatos",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Frozen or Fresh Peas",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Fruit cake",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Ginger ale",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Gooseberries",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Graham crackers",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Grape juice",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Grapefruit",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Grapefruit juice",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Grapes",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Green",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Green Grapes",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Green beans",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Grits",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Ground",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Honeydew",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Instant coffee powder",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Juice made from 2 oxalate fruits",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Kale",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Kamut",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Kiwi",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Kohlrabi",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Lamb",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Leeks",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Lemon Juice",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Lemon peel",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Lemonade or Limeade",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Lentils",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Lettuce",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Lima Beans",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Lime juice",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Lime peel",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Liver",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Macaroni",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Malt",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Mangoes",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Marmalade",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Milk",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Mushrooms",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Mustard greens",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Nectarines",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Noodles",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Oatmeal",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Okra",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Onions",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Orange soda",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Orange juice",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Orange peel",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Orangeade",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Oranges",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Papaya",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Parsley",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Parsnips",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Peaches",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Peanut butter",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Peanuts",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Pears",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Pecans",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Peeled Cucumbers",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Pepper",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Peppers",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Pineapple",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Plums",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Pokeweed",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Pork",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Poultry",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Prunes",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Purple",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Radishes",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Raisins",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Red Peppers",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Red currants",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Red raspberries",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Rhubarb",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Root beer",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Rutabagas",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Sesame seeds",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Snow Peas",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Soda (Up to 8oz Per Day)",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Sorrel",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Soy sauce",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Soybean crackers",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Spaghetti in Tomato Sauce",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Spinach",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Split Peas",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Sponge Cake",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Squash",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Strawberries",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Summer squash",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Sunflower seeds",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Sweet potatoes",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Swiss chard",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Tangerines",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Tea",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Tofu ,walnuts",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Tomato Sauce",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Tomato soup",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Turnips Roots",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Unsalted Saltine or Soda Crackers",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "Vegetable soup",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Water Chestnuts",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Watercress",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Watermelon",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Waxed and dried",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Wheat germ",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "White Potatoes",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "White corn",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "White or Wheat Flour",
+    "content": 1,
+    "alternatives": ""
+  },
+  {
+    "name": "White or Wild Rice",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Wine",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Yams",
+    "content": 2,
+    "alternatives": ""
+  },
+  {
+    "name": "Yogurt",
+    "content": 0,
+    "alternatives": ""
+  },
+  {
+    "name": "Zucchini",
+    "content": 0,
+    "alternatives": ""
+  }
+]

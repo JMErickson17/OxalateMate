@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		CA058C8A202CB8D800D7DCCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058C89202CB8D800D7DCCC /* AppDelegate.swift */; };
-		CA058C8C202CB8D800D7DCCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058C8B202CB8D800D7DCCC /* ViewController.swift */; };
+		CA058C8C202CB8D800D7DCCC /* FoodListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058C8B202CB8D800D7DCCC /* FoodListVC.swift */; };
 		CA058C8F202CB8D800D7DCCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA058C8D202CB8D800D7DCCC /* Main.storyboard */; };
 		CA058C91202CB8D800D7DCCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA058C90202CB8D800D7DCCC /* Assets.xcassets */; };
 		CA058C94202CB8D800D7DCCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA058C92202CB8D800D7DCCC /* LaunchScreen.storyboard */; };
+		CA058C9F202CB93800D7DCCC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058C9E202CB93800D7DCCC /* CoreDataManager.swift */; };
+		CA058CA4202CBDD000D7DCCC /* FoodItems.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA058CA2202CBDD000D7DCCC /* FoodItems.xcdatamodeld */; };
+		CA058CA8202CBFAF00D7DCCC /* UIColor+ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CA7202CBFAF00D7DCCC /* UIColor+ColorScheme.swift */; };
+		CA058CAB202CC8E800D7DCCC /* UIView+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CAA202CC8E800D7DCCC /* UIView+RoundedCorners.swift */; };
+		CA058CAD202CC9F300D7DCCC /* FoodEditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CAC202CC9F300D7DCCC /* FoodEditorVC.swift */; };
+		CA058CB0202CCD8300D7DCCC /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CAF202CCD8300D7DCCC /* FoodItemCell.swift */; };
+		CA058CB4202CD0FF00D7DCCC /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CB3202CD0FF00D7DCCC /* ReusableView.swift */; };
+		CA058CB7202CE3EC00D7DCCC /* FoodData.json in Resources */ = {isa = PBXBuildFile; fileRef = CA058CB6202CE3EC00D7DCCC /* FoodData.json */; };
+		CA058CB9202CE41900D7DCCC /* FoodDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CB8202CE41900D7DCCC /* FoodDataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA058C86202CB8D800D7DCCC /* OxalateMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OxalateMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA058C89202CB8D800D7DCCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA058C8B202CB8D800D7DCCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA058C8B202CB8D800D7DCCC /* FoodListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListVC.swift; sourceTree = "<group>"; };
 		CA058C8E202CB8D800D7DCCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA058C90202CB8D800D7DCCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA058C93202CB8D800D7DCCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA058C95202CB8D800D7DCCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA058C9E202CB93800D7DCCC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CA058CA3202CBDD000D7DCCC /* FoodItems.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodItems.xcdatamodel; sourceTree = "<group>"; };
+		CA058CA7202CBFAF00D7DCCC /* UIColor+ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorScheme.swift"; sourceTree = "<group>"; };
+		CA058CAA202CC8E800D7DCCC /* UIView+RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorners.swift"; sourceTree = "<group>"; };
+		CA058CAC202CC9F300D7DCCC /* FoodEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEditorVC.swift; sourceTree = "<group>"; };
+		CA058CAF202CCD8300D7DCCC /* FoodItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
+		CA058CB3202CD0FF00D7DCCC /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		CA058CB6202CE3EC00D7DCCC /* FoodData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FoodData.json; sourceTree = "<group>"; };
+		CA058CB8202CE41900D7DCCC /* FoodDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,111 @@
 		CA058C88202CB8D800D7DCCC /* OxalateMate */ = {
 			isa = PBXGroup;
 			children = (
+				CA058CB5202CE3DA00D7DCCC /* Data */,
+				CA058CB2202CD0E900D7DCCC /* Extensions */,
+				CA058CA5202CBF8B00D7DCCC /* Theme */,
+				CA058C9D202CB92200D7DCCC /* Core Data */,
+				CA058C9C202CB91A00D7DCCC /* View */,
+				CA058C9B202CB90F00D7DCCC /* Controller */,
 				CA058C89202CB8D800D7DCCC /* AppDelegate.swift */,
-				CA058C8B202CB8D800D7DCCC /* ViewController.swift */,
 				CA058C8D202CB8D800D7DCCC /* Main.storyboard */,
 				CA058C90202CB8D800D7DCCC /* Assets.xcassets */,
 				CA058C92202CB8D800D7DCCC /* LaunchScreen.storyboard */,
 				CA058C95202CB8D800D7DCCC /* Info.plist */,
 			);
 			path = OxalateMate;
+			sourceTree = "<group>";
+		};
+		CA058C9B202CB90F00D7DCCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA058C8B202CB8D800D7DCCC /* FoodListVC.swift */,
+				CA058CAC202CC9F300D7DCCC /* FoodEditorVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA058C9C202CB91A00D7DCCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CAE202CCD6400D7DCCC /* TableViewCells */,
+				CA058CA9202CC8C700D7DCCC /* UIView Extensions */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA058C9D202CB92200D7DCCC /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CA1202CBDAF00D7DCCC /* Model */,
+				CA058CA0202CBDA500D7DCCC /* Manager */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		CA058CA0202CBDA500D7DCCC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CA058C9E202CB93800D7DCCC /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CA058CA1202CBDAF00D7DCCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CA2202CBDD000D7DCCC /* FoodItems.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA058CA5202CBF8B00D7DCCC /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CA6202CBF9D00D7DCCC /* Color Scheme */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		CA058CA6202CBF9D00D7DCCC /* Color Scheme */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CA7202CBFAF00D7DCCC /* UIColor+ColorScheme.swift */,
+			);
+			path = "Color Scheme";
+			sourceTree = "<group>";
+		};
+		CA058CA9202CC8C700D7DCCC /* UIView Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CAA202CC8E800D7DCCC /* UIView+RoundedCorners.swift */,
+			);
+			path = "UIView Extensions";
+			sourceTree = "<group>";
+		};
+		CA058CAE202CCD6400D7DCCC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CAF202CCD8300D7DCCC /* FoodItemCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		CA058CB2202CD0E900D7DCCC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CB3202CD0FF00D7DCCC /* ReusableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA058CB5202CE3DA00D7DCCC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CB6202CE3EC00D7DCCC /* FoodData.json */,
+				CA058CB8202CE41900D7DCCC /* FoodDataLoader.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +241,7 @@
 				CA058C94202CB8D800D7DCCC /* LaunchScreen.storyboard in Resources */,
 				CA058C91202CB8D800D7DCCC /* Assets.xcassets in Resources */,
 				CA058C8F202CB8D800D7DCCC /* Main.storyboard in Resources */,
+				CA058CB7202CE3EC00D7DCCC /* FoodData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA058C8C202CB8D800D7DCCC /* ViewController.swift in Sources */,
+				CA058CB4202CD0FF00D7DCCC /* ReusableView.swift in Sources */,
+				CA058CA8202CBFAF00D7DCCC /* UIColor+ColorScheme.swift in Sources */,
+				CA058CA4202CBDD000D7DCCC /* FoodItems.xcdatamodeld in Sources */,
+				CA058C9F202CB93800D7DCCC /* CoreDataManager.swift in Sources */,
+				CA058CB9202CE41900D7DCCC /* FoodDataLoader.swift in Sources */,
+				CA058CAD202CC9F300D7DCCC /* FoodEditorVC.swift in Sources */,
+				CA058CB0202CCD8300D7DCCC /* FoodItemCell.swift in Sources */,
+				CA058CAB202CC8E800D7DCCC /* UIView+RoundedCorners.swift in Sources */,
+				CA058C8C202CB8D800D7DCCC /* FoodListVC.swift in Sources */,
 				CA058C8A202CB8D800D7DCCC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +446,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA058CA2202CBDD000D7DCCC /* FoodItems.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA058CA3202CBDD000D7DCCC /* FoodItems.xcdatamodel */,
+			);
+			currentVersion = CA058CA3202CBDD000D7DCCC /* FoodItems.xcdatamodel */;
+			path = FoodItems.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CA058C7E202CB8D800D7DCCC /* Project object */;
 }
