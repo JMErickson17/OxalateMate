@@ -33,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA03130D202E17D000208F5C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CA058C86202CB8D800D7DCCC /* OxalateMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OxalateMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA058C89202CB8D800D7DCCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA058C8B202CB8D800D7DCCC /* FoodListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListVC.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		CA058C7D202CB8D800D7DCCC = {
 			isa = PBXGroup;
 			children = (
+				CA03130D202E17D000208F5C /* README.md */,
 				CA058C88202CB8D800D7DCCC /* OxalateMate */,
 				CA058C87202CB8D800D7DCCC /* Products */,
 			);
