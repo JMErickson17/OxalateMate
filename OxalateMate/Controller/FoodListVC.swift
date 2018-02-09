@@ -15,7 +15,11 @@ class FoodListVC: UIViewController {
     
     private enum Segue {
         static let FoodEditorAdd = "FoodEditorAdd"
-        static let FoodEditorEdit = "FoodEditorEdit"
+    }
+    
+    private enum Constants {
+        static let AlternativesPrefix = "Alternatives: "
+        static let SearchBarPlaceholder = "Search Foods"
     }
 
     // MARK: Properties
@@ -24,14 +28,46 @@ class FoodListVC: UIViewController {
     @IBOutlet weak var contentImage: UIImageView!
     @IBOutlet weak var alternativesLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+
+    private let searchController = UISearchController(searchResultsController: nil)
+    private let contentImages = [#imageLiteral(resourceName: "LowOxalate"), #imageLiteral(resourceName: "MediumOxalate"), #imageLiteral(resourceName: "HighOxalate")]
     
-    var foodItems: [FoodItem]? {
-        didSet {
-            configureView()
+    private lazy var foodDataManager: FoodDataManager = {
+        let coreDataManager = CoreDataManager(modelName: "FoodItems")
+        let foodItemManager: FilterableItemManager<FoodItem> = FilterableItemManager(items: [FoodItem]())
+        let foodDataManager = FoodDataManager(coreDataManager: coreDataManager, itemManager: foodItemManager)
+        foodDataManager.afterFoodItemsUpdate = {
+            self.updateViewForNewFoodItems()
         }
-    }
+        return foodDataManager
+    }()
     
-    private let coreDataManager = CoreDataManager(modelName: "FoodItems")
+    private lazy var tableViewEditAction: UITableViewRowAction = {
+        let action = UITableViewRowAction(style: .normal, title: "Edit", handler: { action, indexPath in
+            let foodItem = self.foodDataManager.foodItem(for: indexPath)
+            self.presentFoodEditor(with: foodItem)
+        })
+        action.backgroundColor = UIColor.green
+        return action
+    }()
+    
+    private lazy var tableViewDeleteAction: UITableViewRowAction = {
+        return UITableViewRowAction(style: .destructive, title: "Delete", handler: { action, indexPath in
+            self.tableView.beginUpdates()
+            let foodItem = self.foodDataManager.foodItem(for: indexPath)
+            self.foodDataManager.delete(foodItem)
+            self.tableView.endUpdates()
+        })
+    }()
+    
+    private lazy var resetAlertController: UIAlertController = {
+        let alert = UIAlertController(title: "Reset All Foods?", message: "Are you sure you want to reset all food items?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Reset", style: .destructive, handler: { action in
+            self.foodDataManager.resetToDefaultFoodItems()
+        }))
+        return alert
+    }()
     
     // MARK: View Life Cycle
     
@@ -39,101 +75,76 @@ class FoodListVC: UIViewController {
         super.viewDidLoad()
         
         setupView()
-        setupNotificationHandling()
-        
-        let foodDataLoader = FoodDataLoader()
-        foodDataLoader.loadDefaultFoods(into: coreDataManager.managedObjectContext)
     }
     
     // MARK: Setup
 
     private func setupView() {
         setupTableView()
+
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.placeholder = Constants.SearchBarPlaceholder
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.tintColor = UIColor.white
+        searchController.searchBar.setTextColor(color: UIColor.white)
+        searchController.searchBar.barStyle = .blackTranslucent
+        definesPresentationContext = true
+        
+        if #available(iOS 11.0, *) {
+            navigationItem.searchController = searchController
+        } else {
+            tableView.tableHeaderView = searchController.searchBar
+        }
+        
+        if let initialFoodItem = foodDataManager.firstFoodItem {
+            self.configureView(for: initialFoodItem)
+        }
     }
     
     private func setupTableView() {
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-    }
-    
-    private func setupNotificationHandling() {
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(managedObjectContextObjectsDidChange(_:)),
-                                               name: Notification.Name.NSManagedObjectContextObjectsDidChange,
-                                               object: coreDataManager.managedObjectContext)
-    }
-    
-    // MARK: Configuration
-    
-    func configureView() {
-        tableView.reloadData()
-    }
-    
-    // MARK: Convenience
-    
-    private func fetchFoodItems() {
-        let fetchRequest: NSFetchRequest<FoodItem> = FoodItem.fetchRequest()
-        coreDataManager.managedObjectContext.performAndWait {
-            do {
-                let foodItems = try fetchRequest.execute()
-                self.foodItems = foodItems
-            } catch {
-                print("Unable to execute FoodItem Fetch Request")
-            }
-        }
-    }
-    
-    @objc private func managedObjectContextObjectsDidChange(_ notification: Notification) {
-        guard let userInfo = notification.userInfo else { return }
-        
-        var foodItemsDidChange = false
-        
-        if let inserts = userInfo[NSInsertedObjectsKey] as? Set<NSManagedObject> {
-            for insert in inserts {
-                if let foodItem = insert as? FoodItem {
-                    self.foodItems?.append(foodItem)
-                    foodItemsDidChange = true
-                }
-            }
-        }
-        
-        if let updates = userInfo[NSUpdatedObjectsKey] as? Set<NSManagedObject> {
-            for update in updates {
-                if let _ = update as? FoodItem {
-                    foodItemsDidChange = true
-                }
-            }
-        }
-        
-        if let deletes = userInfo[NSDeletedObjectsKey] as? Set<NSManagedObject> {
-            for delete in deletes {
-                if let foodItem = delete as? FoodItem {
-                    if let index = foodItems?.index(of: foodItem) {
-                        foodItems?.remove(at: index)
-                        foodItemsDidChange = true
-                    }
-                }
-            }
-        }
-        
-        if foodItemsDidChange {
-            
-        }
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
+    // MARK: Configuration
+    
+    func updateViewForNewFoodItems() {
+        self.tableView.reloadData()
+    }
+    
+    func configureView(for foodItem: FoodItem) {
+        self.foodItemLabel.text = foodItem.name
+        self.contentImage.image = contentImages[Int(foodItem.content)]
+        self.alternativesLabel.text = Constants.AlternativesPrefix + foodItem.alternativesString
+    }
+    
+    @IBAction func resetButtonWasTapped(_ sender: Any) {
+        present(resetAlertController, animated: true) {
+            self.updateViewForNewFoodItems()
+        }
+    }
+    
     // MARK: Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
         
         switch identifier {
-        case Segue.FoodEditorEdit:
-            guard let destination = segue.destination as? FoodEditorVC else { return }
-            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            destination.foodItem = foodItems?[indexPath.row]
+        case Segue.FoodEditorAdd:
+            if let destination = segue.destination as? FoodEditorVC {
+                destination.foodDataManager = foodDataManager
+            }
         default:
             break
         }
+    }
+    
+    private func presentFoodEditor(with foodItem: FoodItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let editorVC = storyboard.instantiateViewController(withIdentifier: "FoodEditorVC") as? FoodEditorVC else { return }
+        editorVC.loadView()
+        editorVC.foodItem = foodItem
+        navigationController?.pushViewController(editorVC, animated: true)
     }
 }
 
@@ -142,26 +153,38 @@ class FoodListVC: UIViewController {
 extension FoodListVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let foodItem = foodItems?[indexPath.row] else { fatalError("FoodListVC-Unexpected IndexPath") }
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FoodItemCell.reuseIdentifier, for: indexPath) as? FoodItemCell else {
             fatalError("FoodListVC-Unexpected IndexPath")
         }
-        cell.configureCell(with: foodItem.name!, content: "")
+        let foodItem = foodDataManager.foodItem(for: indexPath)
+        cell.configureCell(with: foodItem.nameString, content: foodItem.contentString)
         return cell
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        guard editingStyle == .delete else { return }
-        guard let foodItem = foodItems?[indexPath.row] else { fatalError("FoodListVC-Unexpected IndexPath") }
-        coreDataManager.managedObjectContext.delete(foodItem)
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        return [tableViewEditAction, tableViewDeleteAction]
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: Segue.FoodEditorEdit, sender: nil)
+        let foodItem = foodDataManager.foodItem(for: indexPath)
+        self.configureView(for: foodItem)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return foodItems?.count ?? 0
+        return foodDataManager.itemCount
     }
 }
+
+// MARK:- UISearchResultsUpdating
+
+extension FoodListVC: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        if let searchText = searchController.searchBar.text {
+            foodDataManager.filterFoodItems(for: searchText)
+        }
+    }
+}
+
+
 

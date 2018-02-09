@@ -13,16 +13,13 @@ class FoodItemCell: UITableViewCell {
     // MARK: Properties
     
     @IBOutlet weak var foodNameLabel: UILabel!
-    @IBOutlet weak var contentLabel: NSLayoutConstraint!
+    @IBOutlet weak var contentLabel: UILabel!
+
+    // MARK: Convenience
     
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
     func configureCell(with name: String, content: String) {
-        
+        self.foodNameLabel.text = name
+        self.contentLabel.text = content
     }
 
 }

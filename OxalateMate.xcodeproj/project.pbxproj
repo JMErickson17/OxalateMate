@@ -21,6 +21,15 @@
 		CA058CB4202CD0FF00D7DCCC /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CB3202CD0FF00D7DCCC /* ReusableView.swift */; };
 		CA058CB7202CE3EC00D7DCCC /* FoodData.json in Resources */ = {isa = PBXBuildFile; fileRef = CA058CB6202CE3EC00D7DCCC /* FoodData.json */; };
 		CA058CB9202CE41900D7DCCC /* FoodDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CB8202CE41900D7DCCC /* FoodDataLoader.swift */; };
+		CA058CBC202CF28000D7DCCC /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CBB202CF28000D7DCCC /* FoodItem.swift */; };
+		CA058CBF202CF94A00D7DCCC /* RadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA058CBE202CF94A00D7DCCC /* RadioButtons.swift */; };
+		CA9A4E58202CFF1800FBFB77 /* OxalateRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9A4E57202CFF1800FBFB77 /* OxalateRadioButton.swift */; };
+		CA9A4E5A202D082100FBFB77 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9A4E59202D082100FBFB77 /* UIView+Border.swift */; };
+		CA9A4E5C202D268600FBFB77 /* FoodItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9A4E5B202D268600FBFB77 /* FoodItemManager.swift */; };
+		CA9DE9E8202D3210002E9CBF /* FilterableItemManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DE9E7202D3210002E9CBF /* FilterableItemManagerDelegate.swift */; };
+		CA9DE9EA202D3793002E9CBF /* UISearchBar+SetTextColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DE9E9202D3793002E9CBF /* UISearchBar+SetTextColor.swift */; };
+		CA9DE9EC202D3B1D002E9CBF /* UIApplication+FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DE9EB202D3B1D002E9CBF /* UIApplication+FirstLaunch.swift */; };
+		CA9DE9EE202D403A002E9CBF /* FoodDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9DE9ED202D403A002E9CBF /* FoodDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +49,15 @@
 		CA058CB3202CD0FF00D7DCCC /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		CA058CB6202CE3EC00D7DCCC /* FoodData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FoodData.json; sourceTree = "<group>"; };
 		CA058CB8202CE41900D7DCCC /* FoodDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataLoader.swift; sourceTree = "<group>"; };
+		CA058CBB202CF28000D7DCCC /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		CA058CBE202CF94A00D7DCCC /* RadioButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtons.swift; sourceTree = "<group>"; };
+		CA9A4E57202CFF1800FBFB77 /* OxalateRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxalateRadioButton.swift; sourceTree = "<group>"; };
+		CA9A4E59202D082100FBFB77 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		CA9A4E5B202D268600FBFB77 /* FoodItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemManager.swift; sourceTree = "<group>"; };
+		CA9DE9E7202D3210002E9CBF /* FilterableItemManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterableItemManagerDelegate.swift; sourceTree = "<group>"; };
+		CA9DE9E9202D3793002E9CBF /* UISearchBar+SetTextColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+SetTextColor.swift"; sourceTree = "<group>"; };
+		CA9DE9EB202D3B1D002E9CBF /* UIApplication+FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+FirstLaunch.swift"; sourceTree = "<group>"; };
+		CA9DE9ED202D403A002E9CBF /* FoodDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +90,12 @@
 		CA058C88202CB8D800D7DCCC /* OxalateMate */ = {
 			isa = PBXGroup;
 			children = (
+				CA9A4E5D202D269700FBFB77 /* Managers */,
 				CA058CB5202CE3DA00D7DCCC /* Data */,
 				CA058CB2202CD0E900D7DCCC /* Extensions */,
 				CA058CA5202CBF8B00D7DCCC /* Theme */,
 				CA058C9D202CB92200D7DCCC /* Core Data */,
+				CA058CBD202CF92200D7DCCC /* Model */,
 				CA058C9C202CB91A00D7DCCC /* View */,
 				CA058C9B202CB90F00D7DCCC /* Controller */,
 				CA058C89202CB8D800D7DCCC /* AppDelegate.swift */,
@@ -101,6 +121,7 @@
 			children = (
 				CA058CAE202CCD6400D7DCCC /* TableViewCells */,
 				CA058CA9202CC8C700D7DCCC /* UIView Extensions */,
+				CA9A4E57202CFF1800FBFB77 /* OxalateRadioButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +129,7 @@
 		CA058C9D202CB92200D7DCCC /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				CA058CBA202CF26F00D7DCCC /* Extensions */,
 				CA058CA1202CBDAF00D7DCCC /* Model */,
 				CA058CA0202CBDA500D7DCCC /* Manager */,
 			);
@@ -150,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CA058CAA202CC8E800D7DCCC /* UIView+RoundedCorners.swift */,
+				CA9A4E59202D082100FBFB77 /* UIView+Border.swift */,
 			);
 			path = "UIView Extensions";
 			sourceTree = "<group>";
@@ -166,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				CA058CB3202CD0FF00D7DCCC /* ReusableView.swift */,
+				CA9DE9E9202D3793002E9CBF /* UISearchBar+SetTextColor.swift */,
+				CA9DE9EB202D3B1D002E9CBF /* UIApplication+FirstLaunch.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,6 +202,32 @@
 				CA058CB8202CE41900D7DCCC /* FoodDataLoader.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		CA058CBA202CF26F00D7DCCC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CBB202CF28000D7DCCC /* FoodItem.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA058CBD202CF92200D7DCCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA058CBE202CF94A00D7DCCC /* RadioButtons.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA9A4E5D202D269700FBFB77 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CA9A4E5B202D268600FBFB77 /* FoodItemManager.swift */,
+				CA9DE9E7202D3210002E9CBF /* FilterableItemManagerDelegate.swift */,
+				CA9DE9ED202D403A002E9CBF /* FoodDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,16 +303,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9A4E5C202D268600FBFB77 /* FoodItemManager.swift in Sources */,
+				CA9DE9EE202D403A002E9CBF /* FoodDataManager.swift in Sources */,
 				CA058CB4202CD0FF00D7DCCC /* ReusableView.swift in Sources */,
 				CA058CA8202CBFAF00D7DCCC /* UIColor+ColorScheme.swift in Sources */,
 				CA058CA4202CBDD000D7DCCC /* FoodItems.xcdatamodeld in Sources */,
+				CA9DE9EC202D3B1D002E9CBF /* UIApplication+FirstLaunch.swift in Sources */,
 				CA058C9F202CB93800D7DCCC /* CoreDataManager.swift in Sources */,
+				CA9DE9E8202D3210002E9CBF /* FilterableItemManagerDelegate.swift in Sources */,
+				CA9A4E5A202D082100FBFB77 /* UIView+Border.swift in Sources */,
 				CA058CB9202CE41900D7DCCC /* FoodDataLoader.swift in Sources */,
 				CA058CAD202CC9F300D7DCCC /* FoodEditorVC.swift in Sources */,
 				CA058CB0202CCD8300D7DCCC /* FoodItemCell.swift in Sources */,
+				CA058CBF202CF94A00D7DCCC /* RadioButtons.swift in Sources */,
 				CA058CAB202CC8E800D7DCCC /* UIView+RoundedCorners.swift in Sources */,
 				CA058C8C202CB8D800D7DCCC /* FoodListVC.swift in Sources */,
 				CA058C8A202CB8D800D7DCCC /* AppDelegate.swift in Sources */,
+				CA058CBC202CF28000D7DCCC /* FoodItem.swift in Sources */,
+				CA9A4E58202CFF1800FBFB77 /* OxalateRadioButton.swift in Sources */,
+				CA9DE9EA202D3793002E9CBF /* UISearchBar+SetTextColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
